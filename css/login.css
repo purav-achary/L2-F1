@@ -1,0 +1,238 @@
+
+
+ul{
+    display: flex;
+    position: relative;
+    top: 27px;
+    float: right;
+    left: -279px;
+    font-family: 'Roboto';
+    font-style: normal;
+
+  
+}
+li{
+    list-style: none;
+    margin-left: 75px;
+    color: #4461F2;
+    font-size: medium;
+   
+    
+   
+}
+
+.register button{
+    color: blue;
+    background-color: rgb(224 238 255);
+    font-family: 'Roboto';
+    font-style: bold;
+    height: 35px;
+    width: 100px;
+    border-radius: 18px;
+    position: absolute;
+    left: 1450px;
+    top: 26px;
+    padding: 5px;
+
+
+}
+
+#login{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    right: -180px;
+}
+.circle1{
+    position: absolute;
+width: 523px;
+height: 500px;
+left: 119px;
+top: 100px;
+
+background: radial-gradient(50% 50% at 50% 50%, rgba(156, 154, 255, 0.3608) 0%, rgba(156, 154, 255, 0) 100%);
+}
+
+
+.circle2{
+
+    position: absolute;
+width: 422px;
+height: 399px;
+left: 180px;
+top: 187px;
+
+background: radial-gradient(50% 50% at 50% 50%, rgba(50, 230, 255, 0.352) 0%, rgba(167, 166, 255, 0) 100%);
+
+}
+
+h1{
+    position: absolute;
+width: 757px;
+height: 223px;
+left: 146px;
+top: 250px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 127.19%;
+}
+
+p{
+    position: absolute;
+width: 387px;
+height: 51px;
+left: 156px;
+top: 496px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 37px;
+
+
+
+color: rgba(0, 0, 0, 0.7);
+}
+
+.illu{
+    position: absolute;
+width: 230px;
+height: 224px;
+left: 400px;
+top: 430px;
+}
+
+#name{
+    position: absolute;
+    width: 350px;
+    height: 77px;
+    left: 61px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background: #EAF0F7;
+    border-radius: 12px;
+}
+
+#Password{
+position: absolute;
+width: 350px;
+height: 77px;
+left: 61px;
+top: 114px;
+border: none;
+padding: 20px;
+margin: 10px;
+background: #EAF0F7;
+border-radius: 12px;
+}
+
+span{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: rgb(148, 148, 148);
+    left: 300px;
+    top: 208px;
+}
+
+button{
+position: absolute;
+width: 350px;
+height: 77px;
+left: 61px;
+top: 250px;
+border: none;
+color: white;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+text-align: center;
+background: #4461F2;
+box-shadow: 0px 19px 30px 4px rgba(138, 158, 255, 0.363);
+border-radius: 12px;
+margin: 10px;
+}
+
+h2{
+position: absolute;
+left: 189px;
+top: 435px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+color: #9A9A9A;
+}
+.line1{
+position: absolute;
+width: 110px;
+height: 0px;
+left: 61px;
+top: 446px;
+border: 1px solid #B4B4B4;
+}
+.line2{
+position: absolute;
+width: 110px;
+height: 0px;
+left: 321px;
+top: 446px;
+border: 1px solid #B4B4B4;
+}
+.google{
+position: absolute;
+width: 87px;
+height: 69px;
+left: 61px;
+top: 495px;
+
+border: 1px solid #BEBEBE;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.apple{
+position: absolute;
+width: 87px;
+height: 69px;
+left: 211px;
+top: 495px;
+border: 1px solid #BEBEBE;
+box-sizing: border-box;
+border-radius: 12px;
+}
+.facebook{
+position: absolute;
+width: 87px;
+height: 69px;
+left: 350px;
+top: 495px;
+border: 1px solid #BEBEBE;
+box-sizing: border-box;
+border-radius: 12px;
+}
+
+button:hover{
+position: absolute;
+width: 360px;
+height: 87px;
+left: 58px;
+top: 246px;
+border: none;
+color: white;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+text-align: center;
+background: #4461F2;
+box-shadow: 0px 19px 30px 4px rgba(50, 82, 243, 0.363);
+border-radius: 12px;
+margin: 10px;
+}

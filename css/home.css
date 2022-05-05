@@ -1,0 +1,392 @@
+
+
+h1{
+    font-family: 'Roboto';
+    font-weight: bold;
+    position: relative;
+    left: 101px;
+    top: -134px;
+    color: white;
+}
+ul{
+    display: flex;
+    position: relative;
+    top: -135px;
+    float: right;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 0%;
+    right: 44px;
+
+  
+}
+li{
+    list-style: none;
+    margin-left: 75px;
+    color: #ffffff;
+    font-size: large;
+   
+    
+   
+}
+
+
+
+main{
+    font-family: 'Roboto';
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows:  153px 200px 100px 100px;
+    grid-template-columns: 490px 600px 490px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    
+}
+.header{ 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+/* grid-column-start:1; grid-row-end: 4; */
+background: rgba(78, 56, 214, 0.71);
+grid-column: 1/4;
+grid-row: 1/2;
+}
+
+.div1{  
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
+    height: 750px;
+    background-color:white;
+
+}
+
+.div2{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color:white;
+
+}
+
+
+.div3{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:white;
+
+}
+
+
+
+
+
+.div4{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+
+}
+.div5{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+
+}
+hr{
+    width: 450px;
+    height: .2px;
+    color: #4461F2;
+}
+
+input{
+    margin: 10px;
+    background: rgba(105, 79, 255, 0.16);
+    border: 1px solid rgb(239, 232, 255);
+    border-radius: 5px;
+    height: 22px;
+}
+.name{    margin-left: 45px;}
+
+.email{margin-left: 83px;}
+
+.age{margin-left: 95px;}
+
+.birthday{margin-left: 91px;}
+
+.address{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.about{
+    margin-left: 17px;
+    margin-top: -26px;
+}
+.div1 label{margin-left: 50px;}
+.cast{
+    margin-left: 50px;
+}
+
+button{
+    position: relative;
+    width: 120px;
+    height: 45px;
+    left: 72%;
+    top: 85px;
+    border: none;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    background: #4461F2;
+    box-shadow: 0px 19px 30px 4px rgba(183, 193, 246, 0.363);
+    border-radius: 12px;
+    margin: 10px;
+    }
+
+    .strong{
+       
+box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6);
+
+width: 468px;
+margin-left: -2px;
+height: 24px;
+    }
+
+    strong,b  {
+        color: #18039A;
+    }
+    .describe{
+        box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6); 
+        width: 600px;
+        height: 45px;
+        position: relative;
+        top: -20px;
+    }
+    .assistant{
+        box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6); 
+        width: 490px;
+        height: 45px;
+        position: relative;
+     
+    }
+    .sub{
+        box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6);
+        width: 490px;
+        height: 45px;
+        position: relative;
+       
+    }
+    .file{position: relative;
+        top: 45px;}
+
+    .cancel button{
+        position: relative;
+        width: 120px;
+    height: 45px;
+    left: 40%;
+    top: 17px;
+    border: none;
+    color: blue;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 10px;
+    border: 1px solid blue;
+    }
+
+    .table_responsive{
+        max-width: 500px;
+        border: 1px solid rgb(185, 185, 255);
+        padding: 15px;
+        overflow: auto;
+        margin: auto;
+        border-radius: 4px;
+    }
+
+    table{
+        width: 550px;
+        font-size: 13px;
+        color: #18039A;
+        /* box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6); */
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    table>thead{
+        background-color: #6176df;
+         box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6); 
+
+        color: #ffffff;
+    }
+
+    th{
+        
+        color: #ffffff;
+    
+    
+    }
+
+    table th, table td{
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+
+    span{
+        height: 50px;
+        width: 250px;
+        border: 1px solid blue;
+        background-color: #dcd7ff;
+        color:  blue;
+        border-radius:3px ;
+    }
+
+    @media screen and (max-width: 844px)
+    {
+
+        .header{ 
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        /* grid-column-start:1; grid-row-end: 4; */
+        background: rgba(78, 56, 214, 0.71);
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 350px;
+        }
+
+        main{
+            font-family: 'Roboto';
+            margin-left: 20px;
+            display: grid;
+            grid-template-rows:  153px 200px 200px 200px;
+            grid-template-columns: 350px ;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            
+        }
+
+        .div1{  
+            border: 1px solid rgba(0, 0, 0, 0.1); 
+            border-radius: 12px;
+            height: 730px;
+            background-color:rgb(255, 255, 255);
+            grid-column: 1/2;
+            grid-row: 2/3;
+        
+        }
+        
+        .div2{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background-color: rgb(255 255 255);
+            grid-column: 1/2;
+            grid-row: 3/4;
+            margin-top: 547px;
+            height: 200px;
+        }
+        
+        
+        
+        .div3{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color:rgb(255, 255, 255);
+            grid-column: 1/2;
+            grid-row: 4/5;
+            margin-top: 557px;
+        
+        }
+        
+        
+        
+        
+        
+        .div4{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            grid-column: 3/4;
+            grid-row: 3/4;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:rgb(255, 255, 255);
+            grid-column: 1/2;
+            grid-row: 5/6;
+            margin-top: 565px;
+        }
+        .div5{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            grid-column: 2/3;
+            grid-row: 3/4;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:white;
+            grid-column: 1/2;
+            grid-row: 6/7;
+            margin-top: 32px;
+        
+        }
+        input{
+            
+            background: rgba(105, 79, 255, 0.16);
+            border: 1px solid rgb(239, 232, 255);
+            border-radius: 2px;
+            height: 15px;
+        }
+        .div1 label{
+            margin-left: 19px;
+        }
+        .strong{
+            box-shadow: inset 10px 9px 34px rgb(200 191 254 / 60%);
+    width: 328px;
+    margin-left: -2px;
+    height: 24px;
+        }
+        
+        hr{
+            width: 280px;
+        }
+        .describe{
+            box-shadow:  inset 10px 9px 34px rgba(200, 191, 254, 0.6); 
+            width: 328px;
+            height: 45px;
+            position: relative;
+            top: -20px;
+        }
+        .assistant{
+            width: 328px;
+        }
+
+        nav{
+            width: 764px;
+        }
+    }
