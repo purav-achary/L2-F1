@@ -1,0 +1,6 @@
+
+
+  input[type="checkbox"]:required:invalid + label { color: red; }
+  input[type="checkbox"]:required:valid + label { color: green; }
+
+input:invalid{color: red;}

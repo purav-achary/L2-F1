@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>validation</title>
+        <link rel="stylesheet" href="./css/validation.css">
+        <script>
+            function send() {
+                var genders = document.getElementsByName("gender");
+                if (genders[0].checked == true) {
+                    alert("Your gender is male");
+                } else if (genders[1].checked == true) {
+                    alert("Your gender is female");
+                } else {
+                    // no checked
+                    var msg = '<span style="color:red;">You must select your gender!</span>';
+                    document.getElementById('msg').innerHTML = msg;
+                    return false;
+                }
+                return true;
+            }
+
+            // function reset_msg() {
+            //     document.getElementById('msg').innerHTML = '';
+            // }
+
+            function checkForm(form)
+            {
+              if(!form.terms.checked) {
+                // alert("Please indicate that you accept the Terms and Conditions");
+                var msg = '<span style="color:red;">Please indicate that you accept the Terms and Conditions</span>';
+                document.getElementById('alert').innerHTML = msg;
+                form.terms.focus();
+                return false;
+              }
+              return true;
+            }
+
+            function validate(){
+                 var valid = false;
+                 if(document.getElementById("js").checked){
+                     valid = true;
+                 }
+                 if(document.getElementById("jq").checked){
+                    valid = true;
+
+                 }
+                 if(document.getElementById("aj").checked){
+                    valid = true;
+
+                 }
+                 if(document.getElementById("rt").checked){
+                    valid = true;
+
+                 }
+                 if(valid){
+                     alert("validation done")
+                 }
+                 else{
+                    var msg = '<span style="color:red;">Please select atleast on technology </span>';
+                document.getElementById('valid').innerHTML = msg;
+                return false;
+                 }
+
+            }
+
+            function dropValid(){
+                var check;
+                check = document.frm.daytext.value;
+                if(check == -1)
+                {
+                    // alert("please select the option")
+                    var msg = '<span style="color:red;">select date </span>';
+                document.getElementById('drop').innerHTML = msg;
+                return false
+                }
+                else{
+                    alert("submit successfully")
+                }
+            }
+
+            function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+        </script>
+
+    </head>
+    <body>
+        <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+            Name: <input type="text" name="name"><br/>  
+            Password: <input type="password" name="password"><br/>  
+            <input type="submit" value="register">  
+            </form> 
+                <!-- RADIO -->
+        <form action="" method="POST">
+            <label>Gender:</label>
+            <br />
+            <input type="radio" name="gender" required value="m"  onclick="reset_msg();" />Male
+            <br />
+            <input type="radio" name="gender" required value="f" onclick="reset_msg();" />Female
+            <br />
+            <div id="msg"></div>
+            <input type="submit" value="send>>" onclick="return send();" />
+        </form>
+                    <!-- CHECKBOX -->
+        <form name="js" onsubmit="return validate()">
+            <input type="checkbox" id="js" value="javaScript">javaScript
+            <input type="checkbox" id="jq" value="jquery">jquery
+            <input type="checkbox" id="aj" value="AngularJS">AngularJS
+            <input type="checkbox" id="rt" value="React">React
+            <div id="valid"></div>
+            <input type="submit">
+        </form>
+
+                  
+                <!-- CHECKBOX -->
+
+          <form onsubmit="return checkForm(this);">
+        
+          <p><input type="checkbox"  id ="terms" name="terms" > I accept the <u>Terms and Conditions</u></p>
+          <div id="alert"></div>
+          <p><input type="submit"></p>
+          </form>
+
+                <!-- DROPDOWN -->
+
+          <form name="frm" onsubmit="return dropValid()">
+              <select name="daytext">
+                  <option value="-1">--Day-- </option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+              </select>
+              <br><br>
+              <div id="drop"></div>
+              <input type="submit" >
+
+          </form>
+    </body>
+</html>

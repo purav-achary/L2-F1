@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  name="form"  action="" onsubmit="return validation()">
+        <input type="text" name="user" id="firstname"  placeholder="first name">
+        <span style="color: red" id="userFname"></span>
+        <input type="text" name="laststname" id="laststname" placeholder="last name">
+        <span id="userLname" style="color: red"></span>
+        <input type="email" name="email" id="email" placeholder="email">
+        <span id="useremail" style="color: red"></span>
+        <input type="tel" name="mobile" id="mobile" placeholder="mobile number">
+        <span id="usermobile" style="color: red"></span>
+        <input type="tel" name="age" id="age" placeholder="age">
+        <span id="userage" style="color: red"></span>
+        <textarea name="address" id="address" placeholder="address"></textarea>
+        <!-- <input type="text" name="address" style="color: red" id="address" placeholder="address"> -->
+        <span id="useraddress"></span>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+        <input type="radio" name="gender" id="gender" value="others">others
+        <span id="usergender" style="color: red"></span>
+
+        <input type="submit">
+    </form>
+    <script>
+        function validation(){
+            var user = document.getElementById('firstname').value;
+            var laststname = document.getElementById('laststname').value;
+            var email = document.getElementById('email').value;
+            var mobile = document.getElementById('mobile').value;
+            var age = document.getElementById('age').value;
+            var address = document.getElementById('address').value;
+            var gender = document.getElementById('address').value;
+            
+            if(user == ""){
+                document.getElementById("userFname").innerHTML=" **please fill First name"
+                return false;
+            }
+            if((user.length <= 2) || (user.length > 20)   ){
+                document.getElementById("userFname").innerHTML=" **length must be between 2 and 20"
+                return false;
+            }
+            if(!isNaN(user)){
+                document.getElementById("userFname").innerHTML=" **numbers not allowed"
+                return false;
+            }
+
+            // lastname
+            if(laststname == ""){
+                document.getElementById("userLname").innerHTML="please fill Last name"
+                return false;
+            }
+            if((laststname.length <= 2) || (laststname.length > 20)   ){
+                document.getElementById("userLname").innerHTML="  **length must be between 2 and 20"
+                return false;
+            }
+            if(!isNaN(laststname)){
+                document.getElementById("userLname").innerHTML=" **numbers not allowed"
+                return false;
+            }
+
+            // email
+            if(email == ""){
+                document.getElementById("useremail").innerHTML="please fill the email field"
+                return false;
+            }
+            if(email.indexOf('@')<=0){
+                document.getElementById("useremail").innerHTML="email invalid use @"
+                return false;
+            }
+
+            // mobile
+            if(mobile == ""){
+                document.getElementById("usermobile").innerHTML="please fill mobile nuber field"
+                return false;
+            }
+            if(isNaN(mobile)){
+                document.getElementById("usermobile").innerHTML="Please fill nubers only"
+                return false;
+            }
+        
+            if(mobile.length !=10 ){
+                document.getElementById("usermobile").innerHTML=" **nuimber must be 10 digit number"
+                return false;
+            }
+
+            // age
+            if(age == ""){
+                document.getElementById("userage").innerHTML="please fill the age field"
+                return false;
+            }
+            if((age.length >= 18)   ){
+                document.getElementById("userage").innerHTML=" **age shoul be more then 18"
+                return false;
+            }
+            if(address == ""){
+                document.getElementById("useraddress").innerHTML="please fill the address field"
+                return false;
+            }
+            if((address.length >10)   ){
+                document.getElementById("useraddress").innerHTML=" **only 10 charecters"
+                return false;
+            }
+
+
+            if(!gender.checked){
+                document.getElementById("usergender").innerHTML="please select your gender"
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/Radio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+      <fieldset>
+        <legend>Fill you details
+          
+      </legend>
+<!-- pattern -->
+     
+        <div>
+          <label for="uname">Choose a username: </label>
+          <input type="text" id="uname" name="name" required size="45"
+                 pattern="[a-z]{4,8}" title="4 to 8 lowercase letters">
+          <span class="validity"></span>
+          <p>Usernames must be lowercase and 4-8 characters in length.</p>
+        </div>
+     
+        
+          <label for="n1">How old are you?</label>
+          
+          <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                 pattern="\d+">
+        
+
+
+        
+          <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="text" id="t1" name="fruit" list="l1" required
+                 pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+          <datalist id="l1">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Apple</option>
+            <option>Strawberry</option>
+            <option>Lemon</option>
+            <option>Orange</option>
+          </datalist>
+        
+
+
+        
+          <label for="t2">What's your e-mail address?</label>
+          <input type="email" id="t2" name="email" required>
+        
+          <p>
+            <label>Enter your card number in the format<br> 123 - 456 - 7890<br><br>
+              <input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="1"/> -
+              <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit " size="2"/> -
+              <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+            </label>
+           </p>
+
+        
+          <label for="t3">Leave a short message</label>
+          <textarea  id="t3" name="msg" maxlength="14" rows="5"></textarea>
+        
+          <label for="c1">comfortable with?  <abbr title="This field is mandatory" aria-label="required">*</abbr>
+          <br> </label>
+          <input type="checkbox"  required id="c1" class="Car" value="Car"><label for="c1">Car</label>
+          <input type="checkbox"  required  id="c2" class="Bike"  value="Bike"><label for="c2">Bike</label>
+          <input type="checkbox"  required id="c4" class="Bus"  value="Bus"><label for="c4">Bus</label>
+          <input type="checkbox"  id="c5" class="no"  value="None"><label for="c4">None</label>
+
+        <br>
+        <br>
+        <label for="c1">Do you have driving licence   <abbr title="This field is mandatory" aria-label="required">*</abbr>
+          <br> </label>
+          <br>
+          <input type="radio" required name="driver" id="r1" class="yes" value="yes"><label for="r1">Yes</label>
+          <input type="radio" required name="driver" id="r2" class="no"  value="no"><label for="r2">No</label>
+          <br>
+          <br>
+          <input type="submit" >
+
+          </fieldset>
+        
+      </form>
+     
+      
+</body>
+</html>

@@ -11,6 +11,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
+
+
+
+    
 </head>
 <body>
     <nav>
@@ -25,55 +29,89 @@
         
     </nav>
 
-    <div class="col-md-6">
-        <div class='col-md-6' id="image1">
-            <img src="./assets/exp1.png" alt="bg1" style="height: 800px; width: 800px;">
-            <div class="circle1">
-                <div class="circle2"></div>
-                <div class="illu"><img src="./assets/f1.png" alt="illu" style="height: 300px;"></div>
-                
-            </div>
-            
-            <h1>Sign in to <br>
-                Building Forms <br>
-                and validations</h1>
 
-                <p>HTML/CSS with best practices and <br>
-                    Understanding of Layouts</p>
-        </div>
-       
-
-    </div>
-
-<div class='col-md-6'  id="login">
-
-    <form action="home.html">
-        <label for="name"></label>
-        <input id="name" placeholder="Email or phone number" required >
-        <br>
-        <input id="Password" placeholder="Password" minlength="6" maxlength="10"required>
-        <br>
-        <span>Reset password</span>
-       <button>Sign in</button>
-                
-      
+    <main>
+        <section class="banner">
+            <div class="left">
+                <div id="image1">
+                    <img src="./assets/exp1.png" alt="bg1" style="height: 800px; width: 800px;">
+                    <div class="circle1">
+                        <div class="circle2"></div>
+                        <div class="illu"><img src="./assets/f1.png" alt="illu" style="height: 300px;"></div>
+                        
+                    </div>
+                    
+                    <h1>Sign in to <br>
+                        Building Forms <br>
+                        and validations</h1>
         
-        <div class="another">
-            <div>
-                <h2>or continue with</h2>
-            </div>
-            <div class="lines">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="buttons">
-                   <div class="google"><img src="./assets/Google.png" alt="" style="margin: 10px;"></div>
-                   <div class="apple" ><img src="./assets/m1.png" alt="" style="position: absolute; top:-8px; left: 3px;"></div>
-                   <div class="facebook"><img src="./assets/Facebook.png" alt="" style="margin: 3px 18px; top: 3px; position: absolute;"></div>
-
+                        <p>HTML/CSS with best practices and <br>
+                            Understanding of Layouts</p>
+                    </div>
+               
+        
                 </div>
             </div>
-        </div>
-      </form>
-</div>
+        </section>
+
+
+        <section class="login">
+
+            <div class="right">
+                <div id="login">
+                    <form name="myform" class="login-form" action="home.html" onsubmit="return validateform()" >  
+                        <input type="email" id="name" name="name" placeholder="Email">
+                        <span></span>
+                        
+                        <br/>  
+                        <input type="password" id="Password" name="password" placeholder="Password"><br/>  
+                       
+                        <div id="display"></div>
+                        <input type="submit" class="signin_button" value="Signin">  
+                        </form>  
+
+                        <div class="another">
+                            <div>
+                                <h2>or continue with</h2>
+                            </div>
+                            <div class="lines">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="buttons">
+                                   <div class="google"><img src="./assets/Google.png" alt="" style="margin: 10px;"></div>
+                                   <div class="apple" ><img src="./assets/m1.png" alt="" style="position: absolute; top:-8px; left: 3px;"></div>
+                                   <div class="facebook"><img src="./assets/Facebook.png" alt="" style="margin: 3px 18px; top: 3px; position: absolute;"></div>
+                
+                                </div>
+                            </div>                        
+                      </form>
+                      
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  //alert("Name can't be blank");  
+  var msg = '<span style="color:red;">Email field can not be blank </span>';
+                document.getElementById('display').innerHTML = msg;
+  return false;  
+}else if(password.length<6){  
+ // alert("Password must be at least 6 characters long.");  
+ var msg = '<span style="color:red;">Password must be at least 6 characters long. </span>';
+                document.getElementById('display').innerHTML = msg;
+  return false;  
+  }  
+}  
+</script>
+
 </body>
+
 </html>

@@ -20,6 +20,34 @@ li{
     
    
 }
+main{
+    display: grid;
+    grid-template-rows:  800px ;
+    grid-template-columns: 800px 800px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    font-family: 'Roboto';
+    margin-left: 20px;
+    display: grid;
+}
+
+.left{
+    
+
+     grid-column: 1/2;
+    grid-row: 1/2;}
+.right{ 
+    width: 800px;
+    height: 800px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.login-form{    position: absolute;
+    left: 153px;
+    top: -8px;
+}
+
+
 
 .register button{
     color: blue;
@@ -41,7 +69,9 @@ li{
     display: flex;
     position: absolute;
     top: 200px;
-    right: -180px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
 }
 .circle1{
     position: absolute;
@@ -117,6 +147,9 @@ top: 430px;
     background: #EAF0F7;
     border-radius: 12px;
 }
+#name:invalid{
+    border: 1px solid red;
+}
 
 #Password{
 position: absolute;
@@ -130,17 +163,24 @@ margin: 10px;
 background: #EAF0F7;
 border-radius: 12px;
 }
-
+.another{
+    position: absolute;
+    left: 157px;
+    top: -38px;
+}
 span{
     position: absolute;
     font-family: 'Roboto';
     font-style: normal;
     color: rgb(148, 148, 148);
-    left: 300px;
-    top: 208px;
+    left: 74px;
+    top: 216px;
+    width: 330px;
 }
-
-button{
+input{
+    height: 40px;
+}
+.signin_button{
 position: absolute;
 width: 350px;
 height: 77px;
@@ -159,17 +199,27 @@ border-radius: 12px;
 margin: 10px;
 }
 
-h2{
-position: absolute;
-left: 189px;
-top: 435px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-text-align: center;
-color: #9A9A9A;
+h2 {
+    position: absolute;
+    left: 180px;
+    top: 435px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #9A9A9A;
+    width: 131px;
 }
+
+input:valid + span::before {
+    content: '✓';
+    color: rgb(0, 255, 55);
+  }
+input:invalid + span::before {
+    content: '✖';
+    color: red;
+  }
 .line1{
 position: absolute;
 width: 110px;
@@ -218,7 +268,7 @@ box-sizing: border-box;
 border-radius: 12px;
 }
 
-button:hover{
+.signin_button:hover{
 position: absolute;
 width: 360px;
 height: 87px;

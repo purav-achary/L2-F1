@@ -12,109 +12,97 @@
 <body>
     
     <main>
-    <div class="header">
-        
-        <nav>
-            <img src="./assets/h1.png" alt="" style="height: 152px;
-        width: 1fr;
-        width: 1618px;">
-            <img src="./assets/l1.webp" alt="" style="width: 60px;
-            border-radius: 50%;
-            border: 1px solid rgb(255 255 255);
-            background-color: white;
-            position: absolute;
-            top: 32px;
-            /* float: left; */
-            left: 45px;" >
-            <h1>HTML/CSS</h1>
-           <ul>
-    
-               <li>Home</li>
-               <li>contact us</li>
-               <li>help</li>
-           </ul>
-           
-       </nav>
-    </div>
-    <div class="div1">
-        
-            <legend>
-                <div class="strong" style="padding: 10px; margin-bottom: 20px;"><strong style="margin-left: 200px;"> Your Details</strong> </div>
-             
-            </legend>
-            <label >
-              First Name
-              <input type="text" class="name">
-            </label>
-            <br>
-            <label>
-              Last Name
-              <input type="text" class="name">
-            </label>
-            <br>
-            <label>
-              Email
-              <input type="text" class="email">
-            </label>
-            <br>
-            <label>
-              Mobile Number
-              <input type="tel" name="phone-number" style="margin-left: 13px;"> </label>
-            <br>
-            <label>
-              Age
-              <input type="number" class="age"> </label>
-            <br>
-            <label>
-              DOB
-              <input type="date" class="birthday"> </label>
-            <br>
-            <br>
-            <hr>
-            <label class="gender">
-              Gender
-              <br>
-              <input type="radio" name="gender" value="Male" checked style="margin-left: 50px; margin-top: 15px;"> Male
-              <input type="radio" name="gender" value="Female"> Female
-              <input type="radio" name="gender" value="Others"> Others    
-            </label>
-            <br>
-            <br>
-            <hr>
-            <label class="cast">
-            Cast
-            <br>
-            <input type="radio" name="cast" value="ST" style="margin-left: 50px;margin-top: 15px;"> ST
-            <input type="radio" name="cast" value="general"> General
-            <input type="radio" name="cast" value="Others"> Others
-        </label>
-        <hr>
+      
+      <section class="header">
+          
+              
+              <nav>
+                  <img  class="bg" src="./assets/h1.png" alt="" >
+                  <img src="./assets/l1.webp" alt="" style="width: 60px;
+                  border-radius: 50%;
+                  border: 1px solid rgb(255 255 255);
+                  background-color: white;
+                  position: absolute;
+                  top: 22px;
+                  /* float: left; */
+                  left: 45px;" >
+                  <h1>HTML/CSS</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>contact us</li>
+                    <li>help</li>
+                </ul>
+                
+            </nav>
+         
+  </section>
+
+  <section class="your-details">
+    <div class="your-details">
+      <form  name="form"  action="" onsubmit="return validation()">
+        <legend>
+          <div class="strong" style="padding: 10px; margin-bottom: 20px;"><strong style="margin-left: 200px;"> Your Details</strong> </div>
+      </legend>
+        <label for="">First Name<input type="text" name="user" class="name" id="firstname"  pattern="[A-Z]{4,8}" placeholder="first name"  ></label>
+        <span style="color: red;
+        width: 20px;
+        top: -5px;
+        position: relative;
+        font-size: 10px;" id="userFname"></span>
         <br>
-        <label>
-            <br>
-           <p style="margin-left: 50px; margin-top: -15px;">Address</p>
-           <br>
-           <textarea  class="address"name="comment" placeholder="Add your address " style="height: 100px; width: 400px; margin-top: -15px;"></textarea>
-        </label>
-            
-            
-            
-            
-           
+        <label for="">Last Name</label><input type="text"  class="name" name="laststname"  pattern="[A-Z]{4,8}" id="laststname" placeholder="last name">
+        <span id="userLname" style="     color: red;
+        position: relative;
+        font-size: 12px;"></span>
+        <br>
+        <label for="">Email</label><input type="email" class="email" name="email" id="email" placeholder="1234@gmail.com">
+        <span id="useremail" style="color: red; position: relative;
+        font-size: 12px;"></span>
+        <br>
+        <label for="">Mobile number</label><input type="tel" name="mobile" id="mobile"  placeholder="Only 10 numbers">
+        <span id="usermobile" style="color: red; position: relative;
+        font-size: 12px;"></span>
+        <br>
+        <label for="">Age</label><input type="number" class="age" name="age" id="age" placeholder="age" min="18" max="1000">
+        <span id="userage" style="color: red; position: relative;
+        font-size: 12px;"></span>
+        <br>
+        <label> 
+        <hr>
+         <p style="margin-left: 50px; margin-top: 39px;">Address</p>
+         <br></label><textarea class="address" name="address" id="address" placeholder="address" maxlength="20"></textarea>
+        <span id="useraddress" style=" color:red; position:relative;
+        font-size: 12px;"></span>
+        <hr>
+        <label for="" class="gender">Gender</label>
+        <br>
+        <br>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+        <input type="radio" name="gender" id="gender" class="others" value="others">others
+        <span id="usergender" style="color: red; position: relative;
+        font-size: 12px"></span>
+        <input type="submit" value="Save">
+    </form>
+  
     </div>
+  
+  </section>
 
 
-    <div class="div2">
+  <section class="describe-yourself">
+   
         <label >
             <br>
             <div class="describe"><strong style="margin-left: 255px; position: relative; top:8px;">Describe yourself</strong> </div>
            
            <br><textarea class="about" name="comment" placeholder="Tell us about yourself" style="height: 120px; width: 560px; "></textarea>
         </label>
-    </div>
+    
+  </section>
 
-
-    <div class="div3">
+  <section class="notification">
+    <div class="notification">
         <div class="assistant"><b style="position: relative;
             top: 12px;
             left: 44%;">Assistant</b></div>
@@ -124,41 +112,50 @@
             <br>
         check later to see what's new and stay up to date.</p2>
     </div>
+  </section>
+
+ <section class="submit-files">
+   <div class="submit-files">
+  <div class="sub"><b style="position: relative;
+      top: 13px;
+      left: 37%;">Submit required Files</b></div>
+  
+ 
+  <div class="file">
+    <form name="js" onsubmit="return validate()">
+      <label for=""style="position: relative;
+      top: -25px;"> submit any file:
+      <br>
+      <form name="js" onsubmit="return validate()">
+        <input type="checkbox" id="Adhar" value="Adhar-card">Adhar card <br>
+        <input type="checkbox" id="Pan" value="PanCard">PanCard <br>
+        <input type="checkbox" id="Debit" value="debit">Debit/credit card
+        <div id="valid"></div>
+    
+      <input type="submit" style="position: relative; width: 120px;height: 45px;left: 72%; top: 134px;border: none; color: white;font-family: 'Roboto';font-style: normal;font-weight: 300;font-size: 18px;text-align: center;background: #4461F2;box-shadow: 0px 19px 30px 4px rgb(183 193 246 / 36%);border-radius: 12px;margin: 10px;"></label>
+  </form>
+
+      
+      <div class="file">
+          <hr style="    margin-top: -110px;">
+          
+          <input class="upload" type="file">
+      </div>
+      
+      <div class="cancel">
+          <button>Cancel</button>
+      </div>
+
+  </div>
+</div>
 
 
-    <div class="div4">
-        <div class="sub"><b style="position: relative;
-            top: 13px;
-            left: 37%;">Submit required Files</b></div>
-        
-       
-        <div class="file">
-            <label for="" style="position: relative;
-            top: -14px;">
-              Submit any one of them:
-              <br>
-            <input type="checkbox" name="cast" value="Adhar-Card" > Adhar Card<br>
-            <input type="checkbox" name="cast" value="Pan-Card"> Pan Card<br>
-            <input type="checkbox" name="cast" value="Card"> Debit/Credit Card<br>
-            </label>
+</section>
+    
 
-            
 
-            <div class="file">
-                <hr style="    margin-top: -30px;">
-                <label for="">
-                <input class="upload" type="file">
-            </label></div>
-            <button>Submit</button>
-            <div class="cancel">
-                <button>Cancel</button>
-            </div>
-            
-
-        </div>
-    </div>
-
-    <div class="div5">
+  <section class="list">
+   
         <!-- <img src="w1.png" alt="" style="width: 600px;"> -->
 
         <div class="table">
@@ -216,7 +213,130 @@
           
            
           
-    </div>
+    
+  </section>
     </main>
+    
+    <script>
+      function validation(){
+            var user = document.getElementById('firstname').value;
+            var laststname = document.getElementById('laststname').value;
+            var email = document.getElementById('email').value;
+            var mobile = document.getElementById('mobile').value;
+            var age = document.getElementById('age').value;
+            var address = document.getElementById('address').value;
+            var gender = document.getElementById('address').value;
+            
+            if(user == ""){
+                document.getElementById("userFname").innerHTML=" Please fill First name"
+                return false;
+            }
+            if((user.length <= 2) || (user.length > 20)   ){
+                document.getElementById("userFname").innerHTML=" length must be between 2 and 20"
+                return false;
+            }
+            if(!isNaN(user)){
+                document.getElementById("userFname").innerHTML=" numbers not allowed"
+                return false;
+            }
+
+            // lastname
+            if(laststname == ""){
+                document.getElementById("userLname").innerHTML="Please fill Last name"
+                return false;
+            }
+            if((laststname.length <= 2) || (laststname.length > 20)   ){
+                document.getElementById("userLname").innerHTML="length must be between 2 and 20"
+                return false;
+            }
+            if(!isNaN(laststname)){
+                document.getElementById("userLname").innerHTML="numbers not allowed"
+                return false;
+            }
+
+            // email
+            if(email == ""){
+                document.getElementById("useremail").innerHTML="Please fill the email "
+                return false;
+            }
+            if(email.indexOf('@')<=0){
+                document.getElementById("useremail").innerHTML="email invalid use @"
+                return false;
+            }
+
+            // mobile
+            if(mobile == ""){
+                document.getElementById("usermobile").innerHTML="Please fill mobile nuber "
+                return false;
+            }
+            if(isNaN(mobile)){
+                document.getElementById("usermobile").innerHTML="Please fill nubers only"
+                return false;
+            }
+        
+            if(mobile.length !=10 ){
+                document.getElementById("usermobile").innerHTML="Number must be 10 digit number"
+                return false;
+            }
+
+            // age
+            if(age == ""){
+                document.getElementById("userage").innerHTML="Please fill the age field"
+                return false;
+            }
+            if((age.length >= 18)   ){
+                document.getElementById("userage").innerHTML=" **age shoul be more then 18"
+                return false;
+            }
+            if(address == ""){
+                document.getElementById("useraddress").innerHTML="Please fill the address field"
+                return false;
+            }
+            if((address.length >10)   ){
+                document.getElementById("useraddress").innerHTML=" **only 10 charecters"
+                return false;
+            }
+
+
+            // if(!gender.checked){
+            //     document.getElementById("usergender").innerHTML="Please select your gender"
+            //     return false;
+            // }
+        }
+       
+
+
+
+            function validate(){
+                 var valid = false;
+                 if(document.getElementById("Adhar").checked){
+                     valid = true;
+                 }
+              
+                 if(document.getElementById("Pan").checked){
+                    valid = true;
+
+                 }
+                 if(document.getElementById("Debit").checked){
+                    valid = true;
+
+                 }
+                 if(valid){
+                     alert("validation done")
+                 }
+                 else{
+                    var msg = '<span style="color:red;">Please select any file </span>';
+                document.getElementById('valid').innerHTML = msg;
+                return false;
+                 }
+
+            }
+    </script>
+
+
+
+
+
+
 </body>
 </html>
